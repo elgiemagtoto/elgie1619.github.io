@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+/* Header Styling */
+header {
+    background-color: #8a6edb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to space out the items */
+}
+
+nav ul li {
+    margin-right: 20px; /* Adds space between each menu item */
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Pushes the Contact Us link to the right */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e0d3ff;
+    
+}
+
+/* Filming Locations Section */
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.location-card {
+    background-color: #d9f99d;
+    border-radius: 10px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.location-card h3 {
+    font-size: 20px;
+    color: #444;
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #8a6edb;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e0d3ff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .locations {
+        padding: 10px;
+    }
+
+    .location-card {
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .location-card {
+        width: 140px;
+    }
+}
